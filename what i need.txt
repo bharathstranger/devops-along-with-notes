@@ -1,0 +1,13 @@
+as a experienced guy i need aws&devops 
+
+	in this i have some udemy courses
+			1.devops master classes 53hours(3 days)
+			2.aws certified devops 20hours(1day)
+			3.docker and k8s 23hours(1day)
+			4.jenkins CI/CD pipeline 2hours
+			5.jenkins zero to hero 10hours(half day)
+			
+	over all it is continuous 6 days course 
+target is 30days along with notes and practice
+
+from 4th december to january 4th	
