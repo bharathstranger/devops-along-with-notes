@@ -1,0 +1,32 @@
+git branch :  branching is the stratagey in this branching we will be having multiple branches once you add file in one branch it will reflect in all the branches 
+			  unless u add and commit 
+	
+git merge: in merging we merge the branch to branch basically we merge only feature branches in production level 
+			for merging we will get the merge id with this we can revert the changes back to previous state this will be helpful when ever the client is not satisfied with the current version
+			if we want to merge the develop with master we s hould checkout to master and do the merging once we done with merging we can push the changes to the remote repository by using git push origin <br> name
+			
+git revert
+
+	before commit:
+	git reset is the command to get the file from stagging to index
+					git reset HEAD filename
+					so it will be unstagged means it will move to working area (stagging to working area)
+					
+				this is basically we do before commit
+		
+	after commit:
+		git reset HEAD~ (this will revert the changes after the commit)
+		it will move to working area basically we do this when ever we want changes in file
+		
+adding git in the existing project
+		we have to enter into the project directory and initialize the git repository mean .git we can make that as project directory add the files and commit the changes push to remote repository 
+		if we remove the .git repository in the project directory it will not the git project anymore
+
+git cli work flow:
+	first we have to check whether we have any untracked files or not by using "git status" and next
+	if u find any untracked file add and commit the changes pull the changes from master branch or working branch then we should push changes to the branch
+	
+backing out the unwanted changes from files in git:
+		
+
+		
