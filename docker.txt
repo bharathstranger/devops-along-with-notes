@@ -1,0 +1,22 @@
+why docker :- docker makes it really easy to install and run software without worrying about setup or dependencies
+what is docker:- docker is a platform or ecosystem around creating  and running containers
+what is ecosystem:- means docker client  |
+						  docker server	 |
+						  docker machine | these all tools and peice of sofware are togeather became ecosystem or platform of docker
+						  docker images	 |
+						  docker hub	 |
+						  docker compose |
+
+docker version is the command to check the version of docker which installed on your local machine
+		docker version
+		
+docker cli:- cli is also called client it is the tool that we are going to issue commands and it actually doesnt do anything with container and images this is help to interact with the another peice of software that called docker server 
+	docker server is also called docker daemon
+
+docker server:- this is actually a peice of software responsible for craeting containers images maintaining containers uploading images and everything possibly maching around the world of docker
+	
+what is a container:- a container is a instance of an image 
+
+image:- image is a single file with all the dependencies and configurations repuired to run a specific program and to create a container
+
+docker run workflow: once we run the docker run command 1st it will check the local machine wheather we have that 		 
