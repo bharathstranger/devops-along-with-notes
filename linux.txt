@@ -1,0 +1,9 @@
+touch is the command to create a empty file
+  touch filename
+we can put data in the file in 2 ways
+    by opening file and enter the data with vi vim nano and etc
+				vi filename
+				vim filename
+				nano filename
+	without opening file also we can put the date by using echo command
+				echo "data which u want to put" > filename

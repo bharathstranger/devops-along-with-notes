@@ -1,0 +1,116 @@
+diff b/w apt-get update and upgrade is update will update the packages and upgrade will upgrade the packages which installed basically available in the system
+
+to set configuration
+
+  git config --global user.name "name"
+  git config --global user.email "email"
+  git config --list will give the complete configuration properties of the machine
+  in git configuration  we can change any properties
+
+to get help in git regarding commands we need to type
+  git --help
+
+to get help for particular command
+  git 	help add (or) anything
+
+to create a first git repository 
+  git init (in the location where you want to start project)
+  the project directory is a hidden directory
+
+ git add is the command to add a file from working to stagging
+  git add filename
+  git add . (to add all files in the local)
+  git add s* (to add the files which starts letter S)
+
+ to check the status of the file 
+  git status
+
+git commit is the command to save the changes of your actions
+  git commit -m "msg" 
+
+to add and commit at a time in git we use 
+  git commit -am "msg"
+  
+to see the logs in git
+  git log (it will display with the numeric value)
+
+in a organisation we will be having 10 people to see commits of a particular person?
+  git log --author="author name"
+
+git workflow
+  working area --> stagging area --> repository area
+
+to see the diff b/w the files or versioned files and it will display the date in the files
+  git diff file names 
+  or 
+  git diff
+
+git diff --staged (to see the diff in all the staging area)
+
+deleting a file in git
+  in two ways you can delete a file 
+      1.deleting from directory or folder
+		  git add and git commit
+	  2.deleting directly using command
+		  git rm file name
+
+
+  git with github:
+  
+git is a seperate process and it is a versione controle management tool 
+
+git hub is a seperate entity and it is a centrloised repository
+
+local repository is															remote repository		 |
+				1. working directory																 |
+									git add -->									git push --->		 |
+				2.stagging area																		 | git workflow					
+									git commit -->								git pull <---		 |
+				3.local repository																	 |
+																									 |
+
+git hub is basically repository hosting service means where we put our code it is like cloud for code and it is centrloised repository and code hosting plotform
+
+to initialize git remote repository  to the local repo we need to initialize local repo .git and next we should add git remote repository by using the command 
+		git remote add origin and url of remote repository
+ 
+to sync the remote repo to the local repo we need to pull the remote repo to local repo
+		git pull <url> of the remote repo
+		
+
+BRANCHES:
+
+branch in a git is pointer to commit
+
+to create a branch we use
+			git branch <branch name>
+
+basically we will be master branch which is default branch and main branch 
+	everyone in a team can create their own branch to commit their changes to their own branch once they done the testing they merge to the master branch
+	
+to switch from one branch to other branch
+		git checkout branch name
+
+git branch <to check in which branch we are in & also to check how many branches that machine has>
+
+when we create a new branch the files which are present in the source branch will reflect in all the branches unless we add and commit
+  
+  
+  
+git rebase
+	the rebase is the concept that to merge th all files in one branch
+			for this we need to go into the branch where you want to merge use the git merge command
+				
+				suppose you want add the development branch files into your master so you should go into the master branch and use the command 
+					
+						"git rebase development"
+						
+				suppose you want add the master branch files into yous development so you should go into the development branch and use the command
+					
+						"git rebase master"
+
+ther is no commit id or rebase id for rebase command and once we merge the branches with rebase command we can't revert it back
+
+						
+			
+

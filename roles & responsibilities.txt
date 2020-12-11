@@ -1,0 +1,27 @@
+This is bharath.I have been working as DevOps Engineer for SUN TECHNO SOFTWARE SERVICES PVT LTD from last 3.9years.Currently We are a team of 8 members.
+We as a pooled resource giving 24/7 support for both production and non production environment for various applications.
+Coming to Non-prod we have about 50instances and for Prod we are using AWS instances for which Auto Scaling Groups is configured.
+Our Application is a majorly client based application and we make sure our entire application lifecycle goes from QA till Prod using automation Tools.
+
+Once the developer pushes the code to the central repository we get an alert through Jira(Ticketing tool) and the code will be processed into various phases of 
+build pipeline like (Compile,Build,Test,Package,Deploy) in Jenkins as we have already configured the plugins.And the package will be pushed onto the nexus 
+artifact repository using Jenkins.Then we use Ansible to deploy the package onto the servers(Tomcat) of QA environment and QA testers will test it.
+Once QA testers are done we will move it to UAT and then LoadTest and Pre-Prod 
+Once we are done with QA,UAT,LT,Pre-Prod which is on local vm's we move the package to Production which is on AWS instances & we monitor the application
+on the servers of prod-environment by using required metrics and make sure the application is up and running.
+we take care of all the 
+the performance issues on 
+the daily basis and the main thing is monitoring.. we make sure all environment..
+especially the production which is on AWS instances is up and accsessable.There
+
+are no issues with any of the instances...
+then we work on tickets
+
+based on their priorities p1 p2 p3....i work mostly on p1 p2 high
+priority tickets and resolve them within tenure of SLA...
+
+.and as a team we make sure all the tickets are resolved.
+we do lot of taking care of documentations,KT,Team-meetings,bridges,everything  else...
+but majorly,the most important thing is production and 
+we make sure 
+its up and running with perfect state without any hurdles.....

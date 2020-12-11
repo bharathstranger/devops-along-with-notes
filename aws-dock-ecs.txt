@@ -1,0 +1,5 @@
+container will be having namespaces and cgroups
+	namespaces will create a boundery on the existing linux machine it will run a different process in backend it is called pid(process id)
+	control groups is used for to allocate the memory and cpu which is required for it and 
+
+docker come into the picture to make it easier to manage 
