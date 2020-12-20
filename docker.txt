@@ -29,8 +29,7 @@ what is a container:- a container is a instance of an image
 
 image:- image is a single file with all the dependencies and configurations repuired to run a specific program and to create a container
 
-docker run workflow: once we run the docker run command 1st it will check the local machine wheather we have that
-
+docker run workflow: once we run the docker run command 1st it will check the local machine wheather we have that image or not if it doesnt find locally next it will pull from docker hub and container will be created 
 namespacing: isolating resources per process
 
 control groups:limit amount of resources used per process
