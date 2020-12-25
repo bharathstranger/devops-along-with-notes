@@ -43,3 +43,45 @@ what is image: image is a snapshot of file system and very specific startup comm
 docker run in detail:
  create and running a container using an image
 		docker run <imagename>
+		
+how to see the running containers in docker:
+	"docker ps" is the command to see the running containers
+	"docker ps -a" is the command for all the containers that running and not running containers
+	"docker ps --all" is also the same command like docker ps -a
+			for ecah one of them is container id  |
+									image		  |
+									command		  |
+									created time  |this all will be here for the containers
+									status		  |
+									ports		  |
+									names		  |
+
+
+containers life cycle:
+	when we execute "docker run" command it will run 2 more commands i.e docker create+docker start togeather 
+			create command create a container and start will start the image
+			we can't start and attach multiple containers at once
+
+removing stoped containers:
+	"docker system prune" is the command to remove the all stopped containers and it will ask for y/n so that we can choose to delete or not 
+	this will remove following 
+	- all stopped containers
+	- all networks not used by at least one container
+	- all dangling images
+	- all dangling build cache (reclaimed space means deleted space)
+		we can remove containers by using "docker rm <container id>"
+	
+getting logs from containers:
+	"docker logs container id" this will give the log info about the container means like "echo hii" and also we can setup and debug the container
+
+stopping docker containers:
+	we can do it in 2 ways 
+		docker stop <container id>
+		docker kill <container id>
+				both of these are used to stop the running containers
+			in docker stop command a SIGTERM(terminate) is sent to the process to shutdown on its own time mean it will take minimum of 10sec
+			in docker kill command a SIGKILL(KILL) is sent to the process to shutdown immediately means right now
+		we better to prefer only stop command it will tak their time
+		
+
+			
