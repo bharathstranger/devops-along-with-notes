@@ -83,5 +83,19 @@ stopping docker containers:
 			in docker kill command a SIGKILL(KILL) is sent to the process to shutdown immediately means right now
 		we better to prefer only stop command it will tak their time
 		
+executing commands in running containers:
+	docker exec -it <container id> /bin/bash
+	  "		"	"		"			redis-cli (we can put how like we want)
+				by executing "exec" command we can able to run a second running program inside a running container
+				i:(interactive) flag to keep stdin open
+				t:(terminal) to allocate a terminal
+				d: to run in background
+purpose of IT flag:
+	the IT flag gives like input and output means I(interactive) input will gives input to terminal and T(terminal) this will gives the output or thee error will be displayed on the terminal
+		in the execution of exec at the end we use /bin/bash or sh or redis-cli or etc these all are command processors that are something allow us to type commands
+starting with shell:
+			docker run -it <image name> sh
+container isolation:
+ isolation means vidiga unchatam i.e the containers can be isolated with each other
 
 			
