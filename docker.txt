@@ -97,5 +97,22 @@ starting with shell:
 			docker run -it <image name> sh
 container isolation:
  isolation means vidiga unchatam i.e the containers can be isolated with each other
+ 
+ docker file:docker file is configuration to define how our container should behave specifically what diferent programs it contain and what it does when it starts up as a container 
+	docker file --> docker client(cli or terminal)-->docker server--> usable image.
+	flow: specify the base image
+					|
+					|
+		  run some commands to install additional programs
+					|
+					|
+		  specify a command to run on container startup
+
+Dockerfile:
+		from: which docker image we want as a base image (ex:alpine or ubuntu or centos)
+		
+		run: to execute some command while preparing custom image
+		
+		cmd: is used for specify what should be executed when a image is used start up for brand new container 
 
 			
